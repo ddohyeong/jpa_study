@@ -14,6 +14,10 @@ public class JpaMain2 {
         tx.begin();
 
         try {
+            Member member = new Member();
+            member.setName("Lee");
+
+
             Book book = new Book();
             book.setName("JPA");
             book.setAuthor("kim");

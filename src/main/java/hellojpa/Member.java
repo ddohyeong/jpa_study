@@ -10,6 +10,7 @@ import java.util.List;
         sequenceName = "MEMBER_SEQ",
         initialValue = 1, allocationSize = 50)
 public class Member extends BaseEntity{
+
     @Id @Column(name = "MEMBER_ID")
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
             generator = "MEMBER_SEQ_GENERATOR")
